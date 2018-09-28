@@ -15,3 +15,6 @@
 
 *  For asynchronous request I have used GCD, where 'Operation que' was another option but for this requirement GCD is more suitable 
 
+### Description about the code
+
+DataProcessor.swift is the only class which handles the data downloading and processing. 
