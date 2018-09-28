@@ -8,9 +8,20 @@
 
 import Foundation
 
+struct Constants{
+    
+    static let url = "https://www.truecaller.com"
+    static let interval = 10
+}
+
+extension String{
+    subscript (i: Int) -> String {
+        return  String(self[index(startIndex, offsetBy: i)])
+    }
+}
+
 class DataProcessor{
     
-
     /*
      
      I was not sure if we can keep the Web page content in a file and re-use it instead of dowloading every time
@@ -27,13 +38,12 @@ class DataProcessor{
      
      */
     
-    
-    let interval = 10
-    
     func tenthCharectorRequest(completion:@escaping (String)->()){
         
         DispatchQueue.global(qos: .default).async {
-            let str = self.getCharacterAt(index:self.interval)
+            
+            let wbString = self.downloadData()
+            let str = wbString[Constants.interval ]
             completion(str)
         }
     }
@@ -42,7 +52,7 @@ class DataProcessor{
         
         /* Using GCD to execute the request in different thread */
         DispatchQueue.global(qos: .default).async {
-            let strs = self.getChahretorAtEvery(nThIndex: self.interval)
+            let strs = self.getChahretorAtEvery(nThIndex: Constants.interval)
             completion(strs)
         }
     }
@@ -57,20 +67,14 @@ class DataProcessor{
     }
     
     /* All the helper methods are running in different cucurrent que, so that the main/UI thred is not blocked */
-    private func getCharacterAt(index:Int)->String{
-        
-        let wbString = downloadData()
-        let str = Array(wbString)[index]
-        return String(str);
-    }
-    
+  
     private func getChahretorAtEvery(nThIndex:Int)->[String]{
         
         let wbString = downloadData()
         var strs:[String] = [String]()
         var idx = nThIndex - 1
         while idx < wbString.count{
-            let chr = String(Array(wbString)[idx])
+            let chr = wbString[idx]
             if chr != " " {
                 strs.append(chr)
             }
@@ -102,7 +106,7 @@ class DataProcessor{
     }
     
     private func downloadData()->String{
-        guard let url = URL(string: "https://www.truecaller.com") , let data = try? Data(contentsOf: url) else{
+        guard let url = URL(string: Constants.url) , let data = try? Data(contentsOf: url) else{
             return ""
         }
         let str = String(data: data, encoding: .utf8)
