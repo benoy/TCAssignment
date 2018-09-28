@@ -1,0 +1,55 @@
+<!doctypehtml><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no"><title>Truecaller</title><meta vmid=description name=description content="Truecaller is transforming today’s phonebook to make it more intelligent and useful."><link rel=icon href=/favicon.ico><link rel=manifest href=/manifest.json><meta name=theme-color content=#0091EA><meta name=mobile-web-app-capable content=yes><meta name=application-name content=Truecaller><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><meta name=apple-mobile-web-app-title content=Truecaller><link rel=apple-touch-icon sizes=144x144 href=/icon-144x144.png><link rel=apple-touch-icon sizes=192x192 href=/icon-192x192.png><meta name=msapplication-TileImage content=/icon-144x144.png><meta name=msapplication-TileColor content=#0091EA><meta name=msapplication-tap-highlight content=no><meta property=og:type content=website><meta property=og:locale content=en><meta property=og:url content=https://www.truecaller.com><meta property=og:title content="Truecaller is transforming today’s phonebook to make it more intelligent and useful.​ | Truecaller"><meta property=og:image content=/icon-open-graph.png><meta property=og:description content="Truecaller is transforming today’s phonebook to make it more intelligent and useful.​"><meta name=twitter:card content=app><meta name=twitter:app:id:iphone content=448142450><meta name=twitter:app:id:ipad content=448142450><meta name=twitter:app:id:googleplay content=com.truecaller><meta name=apple-itunes-app content="app-id=448142450"><meta property=wb:webmaster content=8db1573092a2ba30><link href=https://plus.google.com/+truecaller rel=publisher><script src="https://www.google.com/recaptcha/api.js?render=6LdF3lkUAAAAAJB3RRHJ5IDJ0pikcxDMgaxUBuvI"></script><script src="https://polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes"></script><style>.async-hide { opacity: 0 !important}</style><script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-K79XJ79':true});</script><script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-3261967-7', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('require', 'GTM-K79XJ79');
+function openOutboundLink (a) {
+if (a.target === '_blank') {
+window.open(a.href, '_blank');
+} else {
+window.location = a.href;
+}
+};
+function trackOutboundLink (a) {
+setTimeout(function () {
+openOutboundLink(a);
+}, 1000);
+ga('send', 'event', 'Outbound', 'click', a.href, {
+'transport': 'beacon',
+'hitCallback': function () { openOutboundLink(a); }
+});
+};
+window.addEventListener('beforeinstallprompt', function(e) {
+e.userChoice.then(function(choiceResult) {
+ga('send', 'event', 'App Install Banner', choiceResult.outcome);
+});
+});</script><script async src=https://www.google-analytics.com/analytics.js></script><script>if ('serviceWorker' in navigator) {
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('/sw.js').then(function(reg) {
+console.log('Service worker registered.');
+reg.onupdatefound = function() {
+var installingWorker = reg.installing;
+installingWorker.onstatechange = function() {
+switch (installingWorker.state) {
+case 'installed':
+if (navigator.serviceWorker.controller) {
+console.log('New or updated content is available.');
+window.location.reload();
+} else {
+console.log('Content is now available offline!');
+}
+break;
+case 'redundant':
+console.error('The installing service worker became redundant.');
+break;
+}
+};
+};
+}).catch(function(e) {
+console.error('Error during service worker registration:', e);
+});
+});
+}</script><link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,600,700" rel=stylesheet><style>a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}html{font-weight:100%;box-sizing:border-box;}*,*:before,*:after{box-sizing:inherit;}img{max-width:100%;}input,select,button{-webkit-appearance:none;-moz-appearance:none;appearance:none;}html{image-rendering:-moz-crisp-edges;image-rendering:-o-crisp-edges;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;-ms-interpolation-mode:nearest-neighbor;}</style><link rel=preload href=/js/vendor.50fd64d39d90f6c13500.js as=script><link rel=preload href=/js/main.39cd83a3ded0b9f8841e.js as=script><link rel=preload href=/js/manifest.16e717d660f028b6ea47.js as=script><link rel=preload href=/css/main.bba79b15cedf6cf0581254a0edbe5fc2.css as=style><link href=/css/main.bba79b15cedf6cf0581254a0edbe5fc2.css rel=stylesheet></head><body><div id=app><style>.spinner {width: 40px;height: 40px;background-color: #0086FE;position: fixed;top: 50%;left: 50%;margin: -20px 0 0 -20px;-webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;animation: sk-rotateplane 1.2s infinite ease-in-out;      }      @-webkit-keyframes sk-rotateplane {0% { -webkit-transform: perspective(120px); }50% { -webkit-transform: perspective(120px) rotateY(180deg); }100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg); }}      @keyframes sk-rotateplane {0%{transform: perspective(120px) rotateX(0deg) rotateY(0deg); -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg); }50%{transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }100% { transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}}</style><div class=spinner></div><noscript><style>.noscript-warning { width: 90%; max-width: 480px; margin: 40px auto; padding: 32px; background: #ffff77; border-radius: 2px; }</style><div class=noscript-warning><h3>Welcome to truecaller.com</h3><p>You need to enable JavaScript to view this page.</p></div></noscript></div><script type=text/javascript src=/js/manifest.16e717d660f028b6ea47.js></script><script type=text/javascript src=/js/vendor.50fd64d39d90f6c13500.js></script><script type=text/javascript src=/js/main.39cd83a3ded0b9f8841e.js></script></body></html>
